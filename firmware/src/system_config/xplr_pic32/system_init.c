@@ -1,5 +1,5 @@
-/* TODO: Define processor configuration bits */
-/* Initialize the System */
+#include "system_config.h"
+#include "system_definitions.h"
 /* Processor Configuration bits */
 // DEVCFG3
 #pragma config FSRSSEL = PRIORITY_7 // SRS Select

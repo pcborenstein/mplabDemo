@@ -1,5 +1,6 @@
-
+#include "system_config.h"
+#include "system_definitions.h"
 void SYS_Tasks ( void )
 {
- /* TODO: Call the state machines of all modules and the application. */
+/* Maintain the state machines of all polled modules in the system. */
 }
