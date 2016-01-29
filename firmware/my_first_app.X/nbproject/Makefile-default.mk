@@ -45,17 +45,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../src/main.c
+SOURCEFILES_QUOTED_IF_SPACED=../src/system_config/xplr_pic32/system_tasks.c ../src/system_config/xplr_pic32/system_init.c ../src/main.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1360937237/main.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1360937237/main.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1113425153/system_tasks.o ${OBJECTDIR}/_ext/1113425153/system_init.o ${OBJECTDIR}/_ext/1360937237/main.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1113425153/system_tasks.o.d ${OBJECTDIR}/_ext/1113425153/system_init.o.d ${OBJECTDIR}/_ext/1360937237/main.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1360937237/main.o
+OBJECTFILES=${OBJECTDIR}/_ext/1113425153/system_tasks.o ${OBJECTDIR}/_ext/1113425153/system_init.o ${OBJECTDIR}/_ext/1360937237/main.o
 
 # Source Files
-SOURCEFILES=../src/main.c
+SOURCEFILES=../src/system_config/xplr_pic32/system_tasks.c ../src/system_config/xplr_pic32/system_init.c ../src/main.c
 
 
 CFLAGS=
@@ -94,18 +94,42 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
+${OBJECTDIR}/_ext/1113425153/system_tasks.o: ../src/system_config/xplr_pic32/system_tasks.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1113425153" 
+	@${RM} ${OBJECTDIR}/_ext/1113425153/system_tasks.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1113425153/system_tasks.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1113425153/system_tasks.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"../../../../framework" -I"../" -I"../src/system_config/xplr_pic32" -MMD -MF "${OBJECTDIR}/_ext/1113425153/system_tasks.o.d" -o ${OBJECTDIR}/_ext/1113425153/system_tasks.o ../src/system_config/xplr_pic32/system_tasks.c   
+	
+${OBJECTDIR}/_ext/1113425153/system_init.o: ../src/system_config/xplr_pic32/system_init.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1113425153" 
+	@${RM} ${OBJECTDIR}/_ext/1113425153/system_init.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1113425153/system_init.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1113425153/system_init.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"../../../../framework" -I"../" -I"../src/system_config/xplr_pic32" -MMD -MF "${OBJECTDIR}/_ext/1113425153/system_init.o.d" -o ${OBJECTDIR}/_ext/1113425153/system_init.o ../src/system_config/xplr_pic32/system_init.c   
+	
 ${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937237/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"../../../../framework" -I"../" -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c   
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937237/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_ICD3=1 -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"../../../../framework" -I"../" -I"../src/system_config/xplr_pic32" -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c   
 	
 else
+${OBJECTDIR}/_ext/1113425153/system_tasks.o: ../src/system_config/xplr_pic32/system_tasks.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1113425153" 
+	@${RM} ${OBJECTDIR}/_ext/1113425153/system_tasks.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1113425153/system_tasks.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1113425153/system_tasks.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"../../../../framework" -I"../" -I"../src/system_config/xplr_pic32" -MMD -MF "${OBJECTDIR}/_ext/1113425153/system_tasks.o.d" -o ${OBJECTDIR}/_ext/1113425153/system_tasks.o ../src/system_config/xplr_pic32/system_tasks.c   
+	
+${OBJECTDIR}/_ext/1113425153/system_init.o: ../src/system_config/xplr_pic32/system_init.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1113425153" 
+	@${RM} ${OBJECTDIR}/_ext/1113425153/system_init.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1113425153/system_init.o 
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1113425153/system_init.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"../../../../framework" -I"../" -I"../src/system_config/xplr_pic32" -MMD -MF "${OBJECTDIR}/_ext/1113425153/system_init.o.d" -o ${OBJECTDIR}/_ext/1113425153/system_init.o ../src/system_config/xplr_pic32/system_init.c   
+	
 ${OBJECTDIR}/_ext/1360937237/main.o: ../src/main.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1360937237" 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1360937237/main.o 
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937237/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"../../../../framework" -I"../" -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c   
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1360937237/main.o.d" $(SILENT) -rsi ${MP_CC_DIR}../  -c ${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -I"../../../../framework" -I"../" -I"../src/system_config/xplr_pic32" -MMD -MF "${OBJECTDIR}/_ext/1360937237/main.o.d" -o ${OBJECTDIR}/_ext/1360937237/main.o ../src/main.c   
 	
 endif
 
