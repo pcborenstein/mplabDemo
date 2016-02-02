@@ -13,5 +13,6 @@ SYS_MODULE_OBJ sysDevcon;
 /* Timer driver object handle */
 SYS_MODULE_OBJ drvTmr;
 } SYSTEM_OBJECTS;
-extern SYSTEM_OBJECTS sysObj;
+/* Structure to hold the system objects. */
+SYSTEM_OBJECTS sysObj;
 #endif /* _SYSTEM_DEFINITIONS_H */

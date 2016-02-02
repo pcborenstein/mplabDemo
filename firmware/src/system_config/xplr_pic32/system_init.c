@@ -40,8 +40,7 @@ APP_TMR_DRV_PRESCALE,
 APP_TMR_DRV_INT_SOURCE,
 APP_TMR_DRV_OPERATION_MODE
 };
-/* Structure to hold the system objects. */
-SYSTEM_OBJECTS sysObj;
+
 /* System Initialization Function */
 void SYS_Initialize ( void* data )
 {
