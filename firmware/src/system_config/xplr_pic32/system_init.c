@@ -30,5 +30,27 @@
 
 void SYS_Initialize ( void *data )
 {
- /* TODO: Initialize all modules and the application. */
+/* TMR Driver Initialization Data */
+const DRV_TMR_INIT drvTmrInitData =
+{
+{APP_TMR_DRV_POWER_MODE},
+APP_TMR_DRV_HW_ID,
+APP_TMR_DRV_CLOCK_SOURCE,
+APP_TMR_DRV_PRESCALE,
+APP_TMR_DRV_INT_SOURCE,
+APP_TMR_DRV_OPERATION_MODE
+};
+/* Structure to hold the system objects. */
+SYSTEM_OBJECTS sysObj;
+/* System Initialization Function */
+void SYS_Initialize ( void* data )
+{
+/* Initialize services, drivers & libraries */
+SYS_CLK_Initialize(NULL);
+sysObj.sysDevcon = SYS_DEVCON_Initialize(SYS_DEVCON_INDEX_0, NULL);
+SYS_DEVCON_PerformanceConfig(SYS_CLOCK_FREQENCY);
+sysObj.drvTmr = DRV_TMR_Initialize(APP_TMR_DRV_INDEX,
+(SYS_MODULE_INIT *)&drvTmrInitData);
+/* TODO: Initialize the application. */
+}
 }
