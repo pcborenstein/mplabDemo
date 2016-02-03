@@ -147,7 +147,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="..\..\..\..\framework;..\;..\src\system_config\xplr_pic32"/>
+                  value="..\..\..\..\framework;..\;..\src\system_config\xplr_pic32;..\src"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="false"/>

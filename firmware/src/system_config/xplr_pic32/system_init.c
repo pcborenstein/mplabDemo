@@ -1,5 +1,6 @@
 #include "system_config.h"
 #include "system_definitions.h"
+#include "app.h"
 /* Processor Configuration bits */
 // DEVCFG3
 #pragma config FSRSSEL = PRIORITY_7 // SRS Select
@@ -28,8 +29,7 @@
 #pragma config BWP = OFF // Boot Flash Write Protect bit
 #pragma config CP = OFF // Code Protect
 
-void SYS_Initialize ( void *data )
-{
+
 /* TMR Driver Initialization Data */
 const DRV_TMR_INIT drvTmrInitData =
 {
@@ -50,6 +50,7 @@ sysObj.sysDevcon = SYS_DEVCON_Initialize(SYS_DEVCON_INDEX_0, NULL);
 SYS_DEVCON_PerformanceConfig(SYS_CLOCK_FREQENCY);
 sysObj.drvTmr = DRV_TMR_Initialize(APP_TMR_DRV_INDEX,
 (SYS_MODULE_INIT *)&drvTmrInitData);
-/* TODO: Initialize the application. */
-}
+
+/* Initialize the application. */
+APP_Initialize();
 }

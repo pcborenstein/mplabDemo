@@ -4,13 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/microchip/harmony/v1_06_02/apps/my_first_app/firmware/src/system_config/xplr_pic32/system_tasks.c</file>
-            <file>file:/C:/microchip/harmony/v1_06_02/apps/my_first_app/firmware/src/system_config/xplr_pic32/system_definitions.h</file>
             <file>file:/C:/microchip/harmony/v1_06_02/apps/my_first_app/firmware/src/app.h</file>
             <file>file:/C:/microchip/harmony/v1_06_02/apps/my_first_app/firmware/src/system_config/xplr_pic32/system_init.c</file>
-            <file>file:/C:/microchip/harmony/v1_06_02/apps/my_first_app/firmware/my_first_app.X/nbproject/Makefile-default.mk</file>
             <file>file:/C:/microchip/harmony/v1_06_02/apps/my_first_app/firmware/src/system_config/xplr_pic32/system_config.h</file>
-            <file>file:/C:/microchip/harmony/v1_06_02/apps/my_first_app/firmware/src/main.c</file>
             <file>file:/C:/microchip/harmony/v1_06_02/apps/my_first_app/firmware/src/app.c</file>
+            <file>file:/C:/microchip/harmony/v1_06_02/apps/my_first_app/firmware/src/main.c</file>
         </group>
     </open-files>
 </project-private>
