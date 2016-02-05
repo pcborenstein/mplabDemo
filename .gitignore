@@ -3,4 +3,5 @@
 *.map
 *.elf
 *.hex
-*nbproject/Makefile-*
+**/nbproject/Makefile-*
+**/nbproject/private/*
