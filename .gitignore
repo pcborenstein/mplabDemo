@@ -5,3 +5,4 @@
 *.hex
 **/nbproject/Makefile-*
 **/nbproject/private/*
+**/dist/*
