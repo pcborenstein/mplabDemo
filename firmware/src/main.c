@@ -4,6 +4,9 @@
 #include "system/common/sys_module.h" // SYS function prototypes
 int main ( void )
 {
+    int dummy;
+    dummy = 0;
+    dummy = 3;
 /* Initialize all MPLAB Harmony modules, including application(s). */
 SYS_Initialize ( NULL );
 while ( true )
