@@ -3,6 +3,6 @@
 *.map
 *.elf
 *.hex
-**/nbproject/Makefile-*
-**/nbproject/private/*
-**/dist/*
+*/*/nbproject/Makefile-*
+*/*/dist/*
+*/*/nbproject/private/*
